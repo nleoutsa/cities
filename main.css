@@ -1,0 +1,335 @@
+/*
+========================================
+CSS RESET
+========================================
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+
+// Add this class anywhere you want text to be UNselectable...
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+*/
+
+
+/*
+========================================
+Grid
+========================================
+*/
+
+*,
+*:before,
+*:after, {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+/*
+========================================
+CUSTOM STYLES
+========================================
+*/
+
+body    {
+    background-color: #2f2f2f;
+    text-align: center;
+    color: black;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+li  {
+    margin: 10px;
+}
+.grid {
+    float: right;
+    background-color: #efefef;
+    width: 600px;
+    height: 600px;
+    margin: 3%;
+    border: 1px solid gray;
+}
+.square {
+    width: 50px;
+    height: 50px;
+    float: left;
+    display: block;
+    color: transparent;
+
+}
+
+.drawnOn {
+    background-color: black;
+}
+
+header   {
+    margin: 5px 0;
+    background-color: #87cefa;
+    height: 50px;
+    line-height: 50px;
+    color: #2f2f2f;
+}
+
+span {
+    margin: 20px;
+    color: #2f2f2f;
+}
+
+
+/*
+========================================
+BUTTONS
+========================================
+*/
+
+
+.setSquares {
+    float: right;
+    width: 54px;
+    background-color: #efefef;
+    margin: 15px 90px;
+    border-radius: 6px;
+    color: #2f2f2f;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn {
+    width: 50px;
+    background-color: #87cefa;
+    cursor: pointer;
+}
+.moreSquares {
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 6px 6px 0 0;
+}
+.numOfSquares {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 7px 0;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.lessSquares {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 0 0 6px 6px;
+}
+
+
+/*
+========================================
+BRUSH
+========================================
+*/
+.brush  {
+    float: left;
+    width: 350px;
+    color: transparent;
+}
+
+.redPicker,
+.greenPicker,
+.bluePicker,
+.alphaPicker,
+.colorPicker
+{
+    position: relative;
+    float: left;
+    width: 256px;
+}
+.reds,
+.greens,
+.blues,
+.alphas
+{
+    width: 1px;
+    height: 20px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.redSlider,
+.greenSlider,
+.blueSlider,
+.alphaSlider
+{
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background: #000;
+}
+
+.alphaPicker {
+    margin-left: 6px;
+}
+
+.red_val,
+.green_val,
+.blue_val,
+.alpha_val
+{
+    float: right;
+    color: white;
+}
+
+.colors    {
+    width: 51px;
+    height: 51px;
+    float: left;
+}
+
+.currentColor {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border: 2px solid lightgray;
+}
+.opacity    {
+    width: 256px;
+    height: 40px;
+}
+
+.higher {
+    height: 30px;
+}
+
+
+/*
+========================================
+@MEDIA
+========================================
+*/
+
+@media screen and (max-width: 1050px) {
+
+    .brush  {
+        float: left;
+        width: 600px;
+        color: transparent;
+    }
+
+    .rgba   {
+        width: 350px;
+    }
+
+    .currentColor {
+        position: absolute;
+        left: 510px;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+        border: 2px solid lightgray;
+    }
+
+    .setSquares {
+        position: absolute;
+        left: 320px;
+        width: 54px;
+        background-color: #efefef;
+        margin: 15px 90px;
+        border-radius: 6px;
+        color: #2f2f2f;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .grid {
+        float: left;
+        background-color: #efefef;
+        width: 600px;
+        height: 600px;
+        margin: 3%;
+        border: 1px solid gray;
+    }
+
+}
+
+/* STYLES FOR stats and SAVE FEATURE, UNFINISHED
+
+.stats
+{
+    background-color: lightgray;
+    float: right;
+    width: 150px;
+    height: 200px;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.save,
+.load,
+.stasis,
+.play
+{
+    border: 2px solid black;
+    border-radius: 6px;
+    float: right;
+    margin: 10px;
+}
+
+*/
